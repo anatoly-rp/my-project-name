@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine learning page</title>
+</head>
+<body>
+<p>
+{% if p_message1 %}
+{{p_message1}}
+{% endif %}
+</br>
+{% if p_message %}
+{{p_message}}
+{% endif %}
+</p>
+<p>Для определения значений:<br/>
+ - Модуля упругости при растяжении, ГПа<br/>
+ - Прочности при растяжении, МПа<br/>
+методом <b>линейной регрессии</b>,<br/>
+необходимо заполнить форму, предложенную ниже, и нажать кнопку "Отправить"</p>
+<p1>Форма для отправки запроса:</p1>
+    <form action="" method="post">
+        <p>
+        <label>Введите: Шаг нашивки:</label><br/>
+        <input type="text" name="x1"><br/>
+        </p>
+        <p>
+        <label>Введите: Плотность нашивки</label><br/>
+        <input type="text" name="x2"><br/>
+        </p>
+        <p>
+        <label>Введите: Соотношение матрица-наполнитель</label><br/>
+        <input type="text" name="x3"><br/>
+        </p>
+        <p>
+        <label>Введите: Плотность, кг/м3</label><br/>
+        <input type="text" name="x4"><br/>
+        </p>
+        <p>
+        <label>Введите: Модуль упругости, ГПа</label><br/>
+        <input type="text" name="x5"><br/>
+        </p>
+        <p>
+        <label>Введите: Количество отвердителя, м.%</label><br/>
+        <input type="text" name="x6"><br/>
+        </p>
+        <p>
+        <label>Введите Содержание эпоксидных групп,%_2:</label><br/>
+        <input type="text" name="x7"><br/>
+        </p>
+        <p>
+        <label>Введите: Температура вспышки, С_2</label><br/>
+        <input type="text" name="x8"><br/>
+        </p>
+        <p>
+        <label>Введите: Поверхностная плотность, г/м2</label><br/>
+        <input type="text" name="x9"><br/>
+        </p>
+        <p>
+        <label>Введите: Потребление смолы, г/м2</label><br/>
+        <input type="text" name="x10"><br/>
+        </p>
+        <p>
+        <label>Введите: Угол нашивки (90 или 0)</label><br/>
+        <input type="text" name="x11"><br/>
+        </p>
+        <p>
+        <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
