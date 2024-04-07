@@ -26,7 +26,8 @@ def ml():
                         except:
                                 error = True
                                 break
-                if my_list[10] not in (0, 90):
+                print(my_list)
+                if error == False and my_list[10] not in (0, 90):
                         error = True
                 if error == False:
                         x = data_preparation(my_list)
@@ -49,4 +50,4 @@ def ml():
                                        'Поверхностная плотность (г/м2) = '{my_list1[9]}', Потребление смолы, г/м2 = '{my_list1[10]}' '''
         return render_template(template_name_or_list='ml.html', p_message = my_message, p_message1 = my_message1)
 
-#app.run() #Используется только при локальном запуске
+app.run() #Используется только при локальном запуске
