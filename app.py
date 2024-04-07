@@ -5,11 +5,11 @@ from preprocessing import data_preparation
 
 app = Flask(__name__)
 
-@my_app.route('/')
+@app.route('/')
 def main():
         return render_template('index.html')
 
-@my_app.route('/ml', methods = ['get','post'])
+@app.route('/ml', methods = ['get','post'])
 def ml():
         my_message = ''
         my_message1 = ''
