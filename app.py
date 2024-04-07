@@ -3,7 +3,7 @@ from flask import render_template, request
 from processing import predict
 from preprocessing import data_preparation
 
-my_app = Flask(__name__)
+app = Flask(__name__)
 
 @my_app.route('/')
 def main():
@@ -49,4 +49,4 @@ def ml():
                                        'Поверхностная плотность (г/м2) = '{my_list1[9]}', Потребление смолы, г/м2 = '{my_list1[10]}' '''
         return render_template(template_name_or_list='ml.html', p_message = my_message, p_message1 = my_message1)
 
-#my_app.run() #Используется только при локальном запуске
+#app.run() #Используется только при локальном запуске
